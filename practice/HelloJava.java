@@ -1,3 +1,4 @@
+package practice;
 // semicolon means end of code
 // use semicolon at the end of each block of code
 
