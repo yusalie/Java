@@ -13,12 +13,20 @@ public class importsUsed extends JFrame{
         setLayout(new FlowLayout());
         item1 = new JLabel("This is a label");
         JButton btn = new JButton("click me");
+        JButton btn2 = new JButton("another button");
         btn.setBounds(50, 50, 50, 50);
+        btn2.setBounds(50, 50, 50, 50);
         add(item1);
         add(btn);
         btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 item1.setText("You clicked the button");
+            }
+        });
+        add(btn2);
+        btn2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                item1.setText("You clicked the button2");
             }
         });
     }
